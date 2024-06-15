@@ -1,0 +1,37 @@
+nav {
+   font-size:140%;
+}
+
+footer {
+    font-size:100%;
+}
+
+#footer-ul{
+    margin-left: 2vw;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.fa-2x {
+    font-size: 1.4em;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0; /*Reset the default margin of the browser*/
+}
+
+.theme-light {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.theme-dark {
+    background-color: rgba(0, 0, 0, 0.882);
+    color: rgb(74, 1, 1);
+}
+
+.toggler:hover{
+    cursor: pointer;
+}
