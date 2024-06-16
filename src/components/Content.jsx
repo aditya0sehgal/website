@@ -16,22 +16,22 @@ function Content({ theme }) {
       }
     >
       <Section section="About Me">
-        <AboutMe />
+        <AboutMe theme={theme} />
       </Section>
       <Section section="Skills & Certifications">
         <Skills theme={theme} />
       </Section>
       <Section section="Work Experience">
-        <WorkExperience />
+        <WorkExperience theme={theme} />
       </Section>
       <Section section="Projects">
-        <Projects />
+        <Projects theme={theme} />
       </Section>
       <Section section="Resume">
-        <Resume />
+        <Resume theme={theme} />
       </Section>
       <Section section="Contact Me">
-        <ContactMe />
+        <ContactMe theme={theme} />
       </Section>
       <Section section=""></Section>
     </div>

@@ -1,15 +1,13 @@
 function Section({ section, children }) {
   return (
-    <div className="section container" id={section}>
-      <h1>{section}</h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum
-      dolor sit amet consectetur adipisicing elit. Veritatis neque obcaecati
-      deserunt autem, laborum culpa sunt vero. 
-      dolor sit amet consectetur adipisicing elit. Veritatis neque obcaecati
-      deserunt autem, laborum culpa sunt vero. 
-      <br />
+    <div id={section}>
+      <div className="container section">
+        {section !== "About Me" && <h1>{section}</h1>}
+        <br />
         {children}
-      <br />
+        <br />
+        <br />
+      </div>
     </div>
   );
 }

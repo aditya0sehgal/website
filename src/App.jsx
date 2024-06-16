@@ -3,6 +3,7 @@ import "./App.css";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [theme, setTheme] = useState("light");

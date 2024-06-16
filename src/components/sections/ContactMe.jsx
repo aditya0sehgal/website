@@ -1,6 +1,6 @@
 function ContactMe() {
   return (
-    <div>ContactMe</div>
+    <div>Rethink what to add heree.</div>
   )
 }
 
