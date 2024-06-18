@@ -7,6 +7,7 @@ function Section({ section, children }) {
         {children}
         <br />
         <br />
+        <br />
       </div>
     </div>
   );
