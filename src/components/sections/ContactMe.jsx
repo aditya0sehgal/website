@@ -173,7 +173,7 @@ const ContactMe = ({ theme }) => {
               className="submit-btn m-3"
               type="submit"
             >
-              Send email !!
+              Send email
             </Button>
           </Form>
         </Col>
