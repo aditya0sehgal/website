@@ -1,10 +1,11 @@
-import Section from "./Section";
-import AboutMe from "./sections/AboutMe";
-import ContactMe from "./sections/ContactMe";
-import Projects from "./sections/Projects";
-import Resume from "./sections/Resume";
-import Skills from "./sections/Skills";
-import WorkExperience from "./sections/WorkExperience";
+import Section from "./Section"
+import AboutMe from "./sections/AboutMe"
+import ContactMe from "./sections/ContactMe"
+import Projects from "./sections/Projects"
+import Resume from "./sections/Resume"
+import Skills from "./sections/Skills"
+import WorkExperience from "./sections/WorkExperience"
+import "../components/sections/sectionstyles.css"
 
 function Content({ theme }) {
   return (
@@ -35,7 +36,7 @@ function Content({ theme }) {
       </Section>
       <Section section=""></Section>
     </div>
-  );
+  )
 }
 
-export default Content;
+export default Content

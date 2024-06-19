@@ -1,10 +1,10 @@
-import { Viewer, Worker, ProgressBar } from "@react-pdf-viewer/core";
-import "@react-pdf-viewer/core/lib/styles/index.css";
-import { toolbarPlugin } from "@react-pdf-viewer/toolbar";
-import { SelectionMode } from "@react-pdf-viewer/selection-mode";
-import "@react-pdf-viewer/toolbar/lib/styles/index.css";
-import resume from "../../assets/resume.pdf";
-import { Card } from "react-bootstrap";
+import { Viewer, Worker, ProgressBar } from "@react-pdf-viewer/core"
+import "@react-pdf-viewer/core/lib/styles/index.css"
+import { toolbarPlugin } from "@react-pdf-viewer/toolbar"
+import { SelectionMode } from "@react-pdf-viewer/selection-mode"
+import "@react-pdf-viewer/toolbar/lib/styles/index.css"
+import resume from "../../assets/resume.pdf"
+import { Card } from "react-bootstrap"
 
 // https://react-pdf-viewer.dev/plugins/toolbar/
 
@@ -12,15 +12,15 @@ function Resume({ theme }) {
   const toolbarPluginInstance = toolbarPlugin({
     getFilePlugin: {
       fileNameGenerator: (file) => {
-        const fileName = file.name.substring(file.name.lastIndexOf("/") + 1);
-        return `Aditya Sehgal-${fileName}`;
+        const fileName = file.name.substring(file.name.lastIndexOf("/") + 1)
+        return `Aditya Sehgal-${fileName}`
       },
     },
     selectionModePlugin: {
       selectionMode: SelectionMode.Hand,
     },
-  });
-  const { Toolbar } = toolbarPluginInstance;
+  })
+  const { Toolbar } = toolbarPluginInstance
   return (
     <Card
       className={
@@ -28,12 +28,7 @@ function Resume({ theme }) {
         (theme === "light" ? "text-dark " : "text-light ") +
         `bg-${theme}`
       }
-      style={{
-        width: "80vw",
-        height: "auto",
-        boxShadow: "2.5px 2.5px 3px 3px lightblue",
-        padding: "1%",
-      }}
+      id="cardeffect"
     >
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
         <div>
@@ -51,6 +46,6 @@ function Resume({ theme }) {
         </div>
       </Worker>
     </Card>
-  );
+  )
 }
-export default Resume;
+export default Resume

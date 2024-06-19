@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { Card, ListGroup } from "react-bootstrap";
+import PropTypes from "prop-types"
+import { Card, ListGroup } from "react-bootstrap"
 
 function DescriptionCard({
   title,
@@ -14,21 +14,21 @@ function DescriptionCard({
   return (
     <Card
       className={
-        `content mb-3 ` +
+        `content mb-4 ` +
         (theme === "light" ? "text-dark " : "text-light ") +
         `bg-${theme}`
       }
-      style={{
-        width: "80vw",
-        height: "auto",
-        boxShadow: "2.5px 2.5px 3px 3px lightblue",
-        padding: "1%",
-      }}
+      id="cardeffect"
     >
       <Card.Body>
         <Card.Title>
-          {title}{" "}
-          {subtitle && <span className="text-primary">@ {subtitle}</span>}
+          <b>{title}</b>{" "}
+          {subtitle && (
+            <i>
+              {" "}
+              @<span className="text-primary"> {subtitle}</span>
+            </i>
+          )}
         </Card.Title>
         <Card.Text className="mb-2">{date}</Card.Text>
         {location && (
@@ -59,14 +59,18 @@ function DescriptionCard({
         {link && (
           <Card.Text className="mt-3">
             <strong>Link:</strong>{" "}
-            <a href={link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {link}
             </a>
           </Card.Text>
         )}
       </Card.Body>
     </Card>
-  );
+  )
 }
 
 DescriptionCard.propTypes = {
@@ -78,6 +82,6 @@ DescriptionCard.propTypes = {
   techStack: PropTypes.arrayOf(PropTypes.string),
   location: PropTypes.string,
   link: PropTypes.string,
-};
+}
 
-export default DescriptionCard;
+export default DescriptionCard

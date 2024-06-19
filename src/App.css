@@ -1,19 +1,19 @@
 nav {
-   font-size:130%;
+  font-size: 130%;
 }
 
 footer {
-    font-size:100%;
+  font-size: 100%;
 }
 
-#footer-ul{
-    margin-left: 2vw;
-    width: 15vw;
-    justify-content: space-between;
+#footer-ul {
+  margin-left: 2vw;
+  width: 15vw;
+  justify-content: space-between;
 }
 
 .fa-2x {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 html,
@@ -23,16 +23,16 @@ body {
 }
 
 .theme-light {
-    background-color: whitesmoke;
-    color: black;
-    /* color: #27272728; */
+  background-color: whitesmoke;
+  color: black;
+  /* color: #27272728; */
 }
 
 .theme-dark {
-    background-color: rgba(0, 0, 0, 0.882);
-    color: rgb(74, 1, 1);
+  background-color: rgba(0, 0, 0, 0.882);
+  color: rgb(74, 1, 1);
 }
 
-.toggler:hover{
-    cursor: pointer;
+.toggler:hover {
+  cursor: pointer;
 }

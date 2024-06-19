@@ -15,6 +15,7 @@
     "@react-pdf-viewer/toolbar": "^3.12.0",
     "@react-spring/web": "*",
     "bootstrap": "^5.3.3",
+    "papaparse": "^5.4.1",
     "pdfjs-dist": "^3.4.120",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
